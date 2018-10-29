@@ -50,6 +50,8 @@ class App extends Component {
           loadingText = `Fetching at least ${metadata.length} images`
         }
       }
+    } else if (metadataLoaded) {
+      loadingText = "No images available"
     } else {
       loadingText = "Fetching metadata"
     }
